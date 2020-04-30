@@ -8,4 +8,11 @@ class UberX extends Car {
         this.model = model;
 
     }
+
+    //Otra forma de polimorfismo traemos la impresión para sobreescribirla
+    @Override
+    void printDataCar() {
+        super.printDataCar();
+        System.out.println("Modelo: "+ model + " Brand: " + brand);
+    }
 }
